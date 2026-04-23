@@ -1,0 +1,25 @@
+1. Deterministic vs. Probabilistic
+2. LLMs & The Transformer Architecture
+3. Tokens
+4. Hyperparameters: Controlling the "Brain"
+   Temperature (0.0 to 1.0)
+   Top-P (Nucleus Sampling) - An alternative to temperature. It restricts the token pool to the top X% of probability mass. Usually, set Temperature or Top-P, not both.
+5. Prompt Engineering Patterns
+   A good resource: https://www.promptingguide.ai/techniques
+   Zero-Shot: Providing a task without examples.
+   Few-Shot (In-Context Learning): Providing examples within the prompt to teach the model a specific format.Plaintext
+
+   // Prompt
+    Convert natural language to SQL.
+    Input: "Get all users from London" - Output: SELECT * FROM users WHE
+    RE city = 'London';
+    Input: "Count orders in 2023" - Output: SELECT count(*) FROM orders W
+    HERE year = 2023;
+    Input: "Show top 5 products" - Output:
+
+    Chain of Thought (CoT): Forcing the model to "show its work." This significantly increases accuracy in math and logic problems. 
+    Technique: Append the phrase "Let's think step by step" to your prompt.
+    This forces the model to generate reasoning tokens before the final answer token, which grounds the logic.
+
+  6 olama ( Ollama is the industry standard runtime for this. It wraps llama.cpp (a C++ library for inference) in a user-friendly API.)
+          model - Qwen for code generation
