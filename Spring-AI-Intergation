@@ -3,3 +3,8 @@ Spring AI
 - provides nice abstraction and usefull utils for making a request to the openai or any model
 - best for portability - code once and just change the config setting to update the model or chat client
 - user prompt , system prompt, temprator, advisors - to get better logs with lot of details like token used ..
+
+Embedding  & Vector search
+
+- Embedding is a way to convert the text into list of numbers (use Embedding Models), so that this can be easily stored in a vector Store - helpfull in similarity search (semantic search)
+- ex: generating the similar color to green, this would not be stored anywhere , it uses vector search to identify the similar likeihood colors
