@@ -1,0 +1,5 @@
+Spring AI
+
+- provides nice abstraction and usefull utils for making a request to the openai or any model
+- best for portability - code once and just change the config setting to update the model or chat client
+- user prompt , system prompt, temprator, advisors - to get better logs with lot of details like token used ..
