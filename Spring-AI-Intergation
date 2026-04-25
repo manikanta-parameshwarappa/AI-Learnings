@@ -8,3 +8,11 @@ Embedding  & Vector search
 
 - Embedding is a way to convert the text into list of numbers (use Embedding Models), so that this can be easily stored in a vector Store - helpfull in similarity search (semantic search)
 - ex: generating the similar color to green, this would not be stored anywhere , it uses vector search to identify the similar likeihood colors
+
+
+Text -> Embeding model -> compress the meaning -> fixed-size vector
+
+lower dimensions 364- 768
+higher dimensions 1536 - 3072 ( used for high processing, RAG , Code generation)
+
+Embedding- search vs Models - generation
