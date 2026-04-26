@@ -16,3 +16,7 @@ lower dimensions 364- 768
 higher dimensions 1536 - 3072 ( used for high processing, RAG , Code generation)
 
 Embedding- search vs Models - generation
+
+pgvector db, quadrant, for semantic search 
+
+document - metadata, confidence score
