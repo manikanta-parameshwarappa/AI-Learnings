@@ -1,0 +1,9 @@
+RAG (Retrieval Augmented Generation)
+
+What problem it solved ? why we need it ?
+-> You cannot simply paste 500 pages of documentation into a prompt.
+    Context Window Limits: Models have limits (e.g., 8k, 128k tokens). A 500-page PDF is ~250k tokens. It won't fit.
+    Cost: You pay per token. Sending a book for every "Hello" is prohibitively expensive.
+    "Lost in the Middle": LLMs are great at remembering the beginning and end of a prompt but often hallucinate or forget details buried in the middle of massive text blocks.
+
+Solution: RAG. Only send the 3-5 most relevant paragraphs (chunks) needed to answer the specific question. Store the context data in the vector store(embeded) and then we can do similartiy search
